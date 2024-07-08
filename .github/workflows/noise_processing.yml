@@ -37,7 +37,7 @@ jobs:
     #  with:
     #    packages: ffmpeg
 
-    - name: Create plots
+    - name: Create plot
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
         python ambient_sound_analysis/noise_processing.py
